@@ -12,10 +12,10 @@ def app(environ, start_response):
     path = environ.get("PATH_INFO", "/")
 
     if path.endswith("/hello"):
-        title = "Hello Page"
+        title = "Hola Soy Dora"
         message = "Rendered using Jinja2"
     else:
-        title = "Home"
+        title = "Ebdao Home Page"
         message = "Plain Python + Gunicorn + Nginx"
 
     template = env.get_template("home.html")
